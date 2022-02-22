@@ -1,0 +1,88 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = T3PersonalWkSpcApp
+build_property.RootNamespace = T3PersonalWkSpcApp
+build_property.ProjectDir = D:\Downloads\T3GroupPersonalWkSpc\T3PersonalWkSpcSolution\T3PersonalWkSpcApp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Downloads\T3GroupPersonalWkSpc\T3PersonalWkSpcSolution\T3PersonalWkSpcApp
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Downloads/T3GroupPersonalWkSpc/T3PersonalWkSpcSolution/T3PersonalWkSpcApp/Views/Cart/ViewCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxWaWV3Q2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Downloads/T3GroupPersonalWkSpc/T3PersonalWkSpcSolution/T3PersonalWkSpcApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Downloads/T3GroupPersonalWkSpc/T3PersonalWkSpcSolution/T3PersonalWkSpcApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Downloads/T3GroupPersonalWkSpc/T3PersonalWkSpcSolution/T3PersonalWkSpcApp/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Downloads/T3GroupPersonalWkSpc/T3PersonalWkSpcSolution/T3PersonalWkSpcApp/Views/Product/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Downloads/T3GroupPersonalWkSpc/T3PersonalWkSpcSolution/T3PersonalWkSpcApp/Views/Product/DetailsAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWxzQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Downloads/T3GroupPersonalWkSpc/T3PersonalWkSpcSolution/T3PersonalWkSpcApp/Views/Product/DetailsShopper.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWxzU2hvcHBlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Downloads/T3GroupPersonalWkSpc/T3PersonalWkSpcSolution/T3PersonalWkSpcApp/Views/Product/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Downloads/T3GroupPersonalWkSpc/T3PersonalWkSpcSolution/T3PersonalWkSpcApp/Views/Product/IndexAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleEFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Downloads/T3GroupPersonalWkSpc/T3PersonalWkSpcSolution/T3PersonalWkSpcApp/Views/Product/IndexShopper.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleFNob3BwZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Downloads/T3GroupPersonalWkSpc/T3PersonalWkSpcSolution/T3PersonalWkSpcApp/Views/Product/IndexShopperCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleFNob3BwZXJDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Downloads/T3GroupPersonalWkSpc/T3PersonalWkSpcSolution/T3PersonalWkSpcApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Downloads/T3GroupPersonalWkSpc/T3PersonalWkSpcSolution/T3PersonalWkSpcApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Downloads/T3GroupPersonalWkSpc/T3PersonalWkSpcSolution/T3PersonalWkSpcApp/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Downloads/T3GroupPersonalWkSpc/T3PersonalWkSpcSolution/T3PersonalWkSpcApp/Views/User/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Downloads/T3GroupPersonalWkSpc/T3PersonalWkSpcSolution/T3PersonalWkSpcApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Downloads/T3GroupPersonalWkSpc/T3PersonalWkSpcSolution/T3PersonalWkSpcApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Downloads/T3GroupPersonalWkSpc/T3PersonalWkSpcSolution/T3PersonalWkSpcApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-rc9wux6ruy

@@ -1,0 +1,82 @@
+﻿@model T3PersonalWkSpcApp.Models.Product
+
+@{
+    ViewData["Title"] = "DetailsShopper";
+}
+
+<h1>DetailsShopper</h1>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <form asp-action="QtyOfProduct">
+    <dl class="row">
+        @Html.ValidationSummary()
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Category)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class = "col-sm-10">
+            $@Html.DisplayFor(model => model.Price)
+        </dd>
+        @*<dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Qty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Qty)
+        </dd>*@
+        <dt class = "col-sm-2">
+            @*@Html.DisplayNameFor(model => model.Pic)*@
+            <label>Image of product</label>
+        </dt>
+        <dd class = "col-sm-10">
+            @*@Html.DisplayFor(model => model.Pic)*@
+            <img width="150" height="150" src="@Url.Content(@Model.Pic)" alt="" />
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.Label("Add Qty to Cart")
+        </dt>
+        <dd class = "col-sm-10">
+            @*<input type="number" name="Qty" />     *@
+            @Html.TextBox("Quantity", null, new { @type = "number", @data_val = "true", @data_val_number = "Numeric value for quantity only" ,@Value = "0",@min = 1, @max = 10})
+            @Html.HiddenFor(model => model.ProductId)
+            @Html.HiddenFor(model => model.Price)
+            @Html.HiddenFor(model => model.Pic)
+            @Html.HiddenFor(model => model.Name)
+            @Html.HiddenFor(model => model.Status)
+            @Html.HiddenFor(model => model.Category)
+            @Html.HiddenFor(model => model.Description)
+            <input type="submit" value="Pc" class="btn btn-primary" />
+            @*<a asp-action="QtyOfProduct" asp-route-ProductId="@modelItem.Status"></a>*@
+        </dd>
+    </dl>
+    </form>
+   
+</div>
+<div>
+    @*<a asp-action="Edit" asp-route-id="@Model?.ProductId">Edit</a> |*@
+    <a asp-action="IndexShopper">Back to List</a>
+</div>

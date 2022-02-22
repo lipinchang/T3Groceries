@@ -1,0 +1,165 @@
+﻿@model IEnumerable<T3PersonalWkSpcApp.Models.Product>
+
+@{
+    ViewData["Title"] = "IndexShopper";
+}
+
+<h1>T3 Grocery Mart</h1>
+
+
+@*<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Qty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pic)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pic)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ProductId">Edit</a> |
+                <a asp-action="DetailsShopper" asp-route-id="@item.ProductId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ProductId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>*@
+
+
+
+<style>
+    #divCard{
+        position:relative;
+        float:left;
+        height:50%;
+        width:25%;
+    }
+
+    .content {
+    background-color: lightblue /*aliceblue*/;
+    border: 1px solid black;
+    padding: 10px;
+    /*height: 660px;*/
+    height: 200%;
+    /*width: 1233px;*/
+    width: 100%;
+    /*you can change 260px accordingly to your needs*/
+}
+
+</style>
+
+<div class="content">
+
+    @*show category*@
+    @foreach (var item in Model)
+       {
+            @*<div id="divCard" class="card">
+
+                <!--Card image-->
+                <div class="view">
+                    <img width="150" height="150" src="@Url.Content(item.Pic)" alt="No Pic" class="card-img-top">
+                    <a href="/Product/IndexShopperCategory/@item.Category">
+                          <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+
+                <!--Card content-->
+                <div class="card-body">
+                    <!--Title-->
+                    <h4 class="card-title">@item.Category</h4>
+                </div>
+           </div>*@
+
+
+
+
+
+        <div class="card" style="width: 15rem;" id="divCard">
+            <a asp-action="IndexShopperCategory" asp-route-id="@item.Category" >
+                <img class="card-img-top" style="width:200px;height:200px;" src="@Url.Content(item.Pic)" alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <a href="/Product/IndexShopperCategory/@item.Category">
+                          <div class="mask rgba-white-slight"></div>
+                    </a>
+                <p class="card-text">@item.Category</p>
+            </div>
+        </div>
+
+
+}
+
+
+    @*@foreach (var item in Model)
+       {
+           <div id="divCard" class="card">
+
+              <!--Card image-->
+              <div class="view">
+           <img width="150" height="150" src="@Url.Content(item.Pic)" alt="No Pic" class="card-img-top">
+                <a href="#">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+           </div>
+
+            <!--Card content-->
+            <div class="card-body">
+            <!--Title-->
+            <h4 class="card-title">@item.Name</h4>
+
+            <!--Text-->
+            Category: <label class="card-text">@item.Category</label>
+            <p class="card-text">@item.Description</p>
+            <a href="/Product/DetailsShopper/@item.ProductId" class="btn btn-primary">Buy 1 for $@item.Price</a>*@
+            @*<a href="@Html.ActionLink("Show more", "Details",new{id=@item.Id})">Buy for $@item.Price</a>*@
+            @*</div>*@
+
+        @*</div>
+        
+     }*@
+</div>
+
+

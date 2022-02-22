@@ -1,0 +1,105 @@
+﻿@model IEnumerable<T3PersonalWkSpcApp.Models.ShopCartViewModel>
+
+@{
+    ViewData["Title"] = "ViewCart";
+}
+<head>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<h1>Cart</h1>
+
+<form asp-action="Checkout">
+
+<table class="table">
+    <thead>
+        <tr>
+            @*<th>
+                <input type="checkbox" class="header" id="chkHeader"/>
+            </th>*@
+            <th>@Html.CheckBox("CheckAll", false, new { @id = "select_all" })</th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductId)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pic)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Qty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <input type="checkbox" class="selectedCheckbox" value="@item.ProductId" name="ids" />
+                @*@Html.CheckBox("CheckSelected", false, new { @class = "selectedCheckbox", @Value=item.ProductId})*@
+                @*@Html.CheckBoxFor(modelItem => item.isSelected, new { @class = "selectedCheckbox" })*@
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductId)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pic)
+            </td>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.Qty)*@
+                @Html.TextBoxFor(modelItem => item.Qty, new { style = "width:30px; text-align:right;", onkeyup = "clearUpdateMessage();", onchange = "clearUpdateMessage();" })
+            </td>
+            <td>
+                $@Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserId)   @*removing later*@
+            </td>
+            @*<td>*@
+              @*  <a asp-action="Edit" asp-route-id="@item.ShoppingCartId">Edit</a> *@
+                @*<a asp-action="Details" asp-route-id="@item.ShoppingCartId">Details</a> |*@
+                @*<a asp-action="RemoveSelectedCartItem" asp-route-id="@item.ShoppingCartId">Delete</a>*@
+            @*</td>*@
+            <td>
+                @*<a href="#" class="RefreshQuantity" data-id="@item .Product.ProductId" txt-id="CartItems_@(ix)__Count">Refresh quantity</a>*@
+            </td>
+           
+        </tr>
+        @*<tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Total:</td>
+            <td>$@ViewBag.Message</td>
+        </tr>*@
+}
+    </tbody>
+</table>
+    <div class="form-group">
+        <p>Total: $@ViewBag.Message</p>
+        <input type="submit" value="Checkout" class="btn btn-primary" name="command"  />
+        <input type="submit" value="Delete" class="btn btn-warning" name="command" />            
+    </div>
+</form>
+
+<script type="text/javascript">
+      
+
+        $('#select_all').click(function () {
+    $('.selectedCheckbox').prop('checked', this.checked)
+});  
+
+</script>
